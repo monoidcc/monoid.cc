@@ -1,35 +1,112 @@
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
 * {
   margin: 0;
   padding: 0;
 }
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 10px;
+  }
+}
 body {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-image: url(./mountain.jpg);
   background-color: #D8D8D8;
   color: #252525;
   font-family: helvetica;
 }
+
+.hero {
+  position: relative;
+  height: 100vh;
+}
+
+.hero__brand {
+  padding: 18px;
+}
+
+.hero__banner {
+  text-align: center;
+  font-size: 8rem;
+  z-index: 1;
+}
+
+.hero__upper-area {
+  position: absolute;
+  height: 50vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #d8d8d8;
+}
+
+.hero__lower-area {
+  position: absolute;
+  width: 100vw;
+  height: 50vh;
+  bottom: 0;
+  left: 0;
+  background: rgb(37,180,208);
+  background: linear-gradient(120deg, rgba(37,180,208,1) 0%, rgba(69,67,219,1) 100%);
+}
+
+.mission {
+  position: relative;
+  padding: 12px;
+}
+
+.mission__heading {
+  padding: 12px;
+  text-align: center;
+  margin-top: 250px;
+  margin-bottom: 50px;
+  font-size: 3rem;
+  font-weight: lighter;
+}
+
+.mission__p {
+  margin: 60px auto;
+  width: 70%;
+  font-size: 2rem;
+  font-weight: lighter;
+  margin-bottom: 250px;
+  line-height: 1.5;
+}
+
+.footer__copyright {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.mb25 {
+  margin-bottom: 25px;
+}
 </style>
 <link rel="shortcut icon" href="logo.png">
 </head>
-<div style="height: 100vh; position: relative;">
-  <div style="position: absolute; width: 100vw; height: 50vh; bottom: 0; left: 0; background: rgb(37,180,208); background: linear-gradient(120deg, rgba(37,180,208,1) 0%, rgba(69,67,219,1) 100%);;">
-    <p style="text-align: center; font-size: 8em; z-index: 1;"><strong><i>Be a monoid.</i></strong></p>
-  </div>
-  <div style="position: absolute; display: flex; flex-direction: column; height: 50vh; width: 100vw; justify-content: space-between;">
+<body>
+<div class="hero">
+  <div class="hero__upper-area">
     <div>
-     <h1 style="padding: 18px;"><img src="logo-with-text.png" width="160" /></h1>
-
+     <h1 class="hero__brand"><img src="logo-with-text.png" width="160" /></h1>
     </div>
-    <p style="text-align: center; font-size: 8em; z-index: 1; margin-bottom: 25px;"><strong><i>Be yourself,</i></strong></p>
+    <p class="hero__banner mb25"><strong><i>Be yourself,</i></strong></p>
+  </div>
+  <div class="hero__lower-area">
+    <p class="hero__banner"><strong><i>Be a monoid.</i></strong></p>
   </div>
 </div>
-
-<div style="position: relative; padding: 12px;">
-<h3 style="padding: 12px; text-align: center; margin-top: 250px; margin-bottom: 50px; font-size: 3em; font-weight: lighter;">Our mission</h3>
-
-<p style="margin: 60px auto; width: 70%; font-size: 2em; font-weight: lighter; margin-bottom: 250px;">Monoid, Inc. explores the world of history, culture, open source software, and mathematics by means of TypeScript, Rust, and Web technology. Our goal is to attain the new level of understanding of software and find out new paths in software engineering.</p>
-<hr style="border-top: 1px solid #777; margin-bottom: 50px; border-bottom-width: 0;" />
-<p style="text-align: center;">© 2019 monoid</p>
+<div class="mission">
+  <h3 class="mission__heading">Our mission</h3>
+  <p class="mission__p">Monoid, Inc. explores the world of history, culture, open source software, and mathematics by means of TypeScript, Rust, and Web technology. Our goal is to attain the new level of understanding of software and find out new paths in software engineering.</p>
+  <hr style="border-top: 1px solid #777; margin-bottom: 50px; border-bottom-width: 0;" />
 </div>
-
+<footer>
+  <p class="footer__copyright mb25">© 2019 monoid</p>
+</footer>
+</body>
