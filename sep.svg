@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="133px" height="25px" viewBox="0 0 133 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61 (89581) - https://sketch.com -->
+    <title>sep</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <radialGradient cx="50%" cy="0%" fx="50%" fy="0%" r="100%" id="radialGradient-1">
+            <stop stop-color="#474747" offset="0%"></stop>
+            <stop stop-color="#252525" offset="100%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="landing-page" transform="translate(-654.000000, -2792.000000)">
+            <g id="sep" transform="translate(654.000000, 2792.000000)">
+                <g id="Group" transform="translate(54.000000, 0.000000)">
+                    <circle id="Oval" fill="#252525" cx="12.5" cy="12.5" r="12.5"></circle>
+                    <circle id="Oval" fill="#FFFFFF" cx="12.7272727" cy="12.7272727" r="10.9090909"></circle>
+                    <circle id="Oval" fill="url(#radialGradient-1)" cx="12.7272727" cy="12.7272727" r="10"></circle>
+                </g>
+                <circle id="Oval" fill="#252525" cx="100.5" cy="12.5" r="5.5"></circle>
+                <circle id="Oval" fill="#252525" cx="127.5" cy="12.5" r="5.5"></circle>
+                <circle id="Oval" fill="#252525" cx="32.5" cy="12.5" r="5.5"></circle>
+                <circle id="Oval" fill="#252525" cx="5.5" cy="12.5" r="5.5"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

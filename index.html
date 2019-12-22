@@ -32,7 +32,7 @@ body {
 
 .hero__banner {
   text-align: center;
-  font-size: 8rem;
+  font-size: 6rem;
   z-index: 1;
 }
 
@@ -60,13 +60,13 @@ body {
   position: relative;
   padding: 12px;
   min-height: 100vh;
-  background-color: rgba(255,255,255,0.5);
+  background-color: rgba(255,255,255,0.66);
 }
 
 .mission__p {
   margin: 250px auto;
   width: 70%;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: lighter;
   margin-bottom: 250px;
   line-height: 1.5;
@@ -74,32 +74,62 @@ body {
 
 .who {
   position: relative;
-  background-color: #d8d8d8;
+  background-color: white;
   min-height: 100vh;
   width: 100vw;
 }
 
-.contact {
+.who__p {
   position: relative;
-  background-color: pink;
+  margin: 250px auto;
+  width: 70%;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  margin-bottom: 250px;
+  line-height: 1.5;
+}
+
+.contact {
+  border-top: solid 1px #d8d8d8;
+  position: relative;
+  background-color: white;
   min-height: 100vh;
   width: 100vw;
+}
+.contact__p {
+  position: relative;
+  margin: 250px auto;
+  width: 70%;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  margin-bottom: 250px;
+  line-height: 1.5;
 }
 
 .footer {
   position: relative;
-  padding: 25px;
-  background-color: #d8d8d8;
+  padding: 25px 0 45px;
+  border-top: solid 1px #d8d8d8;
+  background-color: white;
   width: 100vw;
 }
 
 .footer__copyright {
-  font-size: 1.5rem;
+  font-size: 1rem;
+  font-weight: lighter;
+  text-align: center;
+}
+
+.sep {
   text-align: center;
 }
 
 .mb25 {
   margin-bottom: 25px;
+}
+
+.mt10 {
+  margin-top: 10px;
 }
 </style>
 <link rel="shortcut icon" href="logo.png">
@@ -108,21 +138,33 @@ body {
 <div class="hero">
   <div class="hero__upper-area">
     <div>
-     <h1 class="hero__brand"><img src="logo-with-text.png" width="160" /></h1>
+     <h1 class="hero__brand">
+       <img src="logo-with-text.png" width="160" />
+     </h1>
     </div>
-    <p class="hero__banner mb25"><strong><i>Be yourself,</i></strong></p>
+    <p class="hero__banner mb25">
+      <strong><i>Be yourself,</i></strong>
+    </p>
   </div>
   <div class="hero__lower-area">
-    <p class="hero__banner"><strong><i>Be a monoid.</i></strong></p>
+    <p class="hero__banner mt10">
+      <strong><i>Be a monoid.</i></strong>
+    </p>
   </div>
 </div>
 <div class="mission">
-  <!--h3 class="mission__heading">Our mission</h3-->
   <p class="mission__p">Our mission<br /><br />Monoid explores the world of history, culture, open source software, and mathematics by means of TypeScript, Rust, and Web technology. Our goal is to attain the new level of understanding of software and find out new paths in software engineering.</p>
 </div>
 <div class="who">
+  &nbsp;
+  <p class="who__p">Who we are<br/><br/>We are a loosely tightened group of people who share the values and goals of Monoid.</p>
+  <p class="sep">
+    <img src="sep.svg" class="sep" width="100"/>
+  </p>
 </div>
 <div class="contact">
+  <p class="contact__p">Contact<br/><br/>Please send us message through:<a href="https://github.com/monoidcc/issues/issues"><br/>https://github.com/monoidcc/issues/issues</a>
+  </p>
 </div>
 <footer class="footer">
   <p class="footer__copyright">© 2019 monoid</p>
