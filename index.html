@@ -99,6 +99,18 @@ body {
 
 .who__people {
   margin-bottom: 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.who__group {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-start;
 }
 
 .who__person {
@@ -230,14 +242,25 @@ body {
   &nbsp;
   <p class="who__p">Who we are<br/><br/>We are a loosely tightened group of people who share the values and goals of Monoid.</p>
   <div class="who__people">
-    <div class="who__person">
-      <p><img class="who__person__avatar" src="./kt3k.jpg" /></p>
-      <p class="who__person__name">Yoshiya Hinosawa</p>
-      <p class="who__person__title">Software Engineer</p>
-      <p class="who__person__link">
-        <img src="./github.png" />
-        <a class="who__person__link__anchor" href="https://github.com/kt3k">@kt3k</a>
-      </p>
+    <div class="who__group">
+      <div class="who__person">
+        <p><img class="who__person__avatar" src="./kt3k.jpg" /></p>
+        <p class="who__person__name">Yoshiya Hinosawa</p>
+        <p class="who__person__title">Software Engineer</p>
+        <p class="who__person__link">
+          <img src="./github.png" />
+          <a class="who__person__link__anchor" href="https://github.com/kt3k">@kt3k</a>
+        </p>
+      </div>
+      <div class="who__person">
+        <p><img class="who__person__avatar" src="./ampcpmgp.jpg" /></p>
+        <p class="who__person__name">Akira Hayatake</p>
+        <p class="who__person__title">Software Engineer</p>
+        <p class="who__person__link">
+          <img src="./github.png" />
+          <a class="who__person__link__anchor" href="https://github.com/ampcpmgp">@ampcpmgp</a>
+        </p>
+      </div>
     </div>
   </div>
   <p class="who__p">Who we aren't<br/><br/>Monoid is not a company. It's a voluntary collaboration, and therefore anybody can join us or leave us anytime they want.<br/><br/>Monoid, Inc. is a company behind Monoid. The company helps organizing the meetings of the members of Monoid, helps logistics, etc. However the members don't owe any responsibility to it.<br/></p>
@@ -255,9 +278,11 @@ body {
     <a href="https://github.com/kt3k/moneybit-app">Moneybit</a><br/>
     A mobile accounting app. WIP.<br />
     <br />
-    <a href="https://github.com/strawjs">Straw.js</a><br/>
-    A lightweight native-web bridging library, supports Android and iOS.<br/>
-    </ul>
+    <a href="https://github.com/kt3k/lepont">LePont</a><br/>
+    A native &lt;-&gt; browser (webview) bridge library for react-native<br/>
+    <br />
+    <a href="https://github.com/ampcpmgp/am-mocktimes">am-mocktimes</a><br/>
+    A tool for displaying UI mock patterns.<br/>
   </p>
   <p class="sep">
     <img src="sep.svg" class="sep" width="100"/>
