@@ -64,7 +64,7 @@ body {
   bottom: 0;
   left: 0;
   background: rgb(37,180,208);
-  background-image: linear-gradient(120deg, hsl(189.7,69.5%,48.8%) 0%, hsl(240.8,68.8%,56.1%) 100%);
+  background-image: linear-gradient(90deg, #076585 0%, #fff 100%);
 }
 
 .mission {
@@ -296,21 +296,4 @@ body {
 <footer class="footer">
   <p class="footer__copyright">© 2020 monoid</p>
 </footer>
-<script>
-const qs = q => document.querySelector(q)
-const hueInc = (h, d = 1) => (h + d) % 360
-
-const heroLower = qs('.hero__lower-area')
-
-let h0 = 189
-let h1 = 240
-const d1 = 0.7 + Math.random()
-const d2 = 0.7 + Math.random()
-
-setInterval(() => {
-  h0 = hueInc(h0, d1)
-  h1 = hueInc(h1, d2)
-  heroLower.style.backgroundImage = `linear-gradient(120deg, hsl(${h0},69.5%,48.8%) 0%, hsl(${h1},68.8%,56.1%) 100%)`
-}, 700)
-</script>
 </body>
